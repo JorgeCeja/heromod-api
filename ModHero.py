@@ -24,7 +24,7 @@ class ModHero(object):
 
         return model
 
-    def classify(self):
+    def classify(self, text):
         model_input = self.preprocessText(text)
 
         # Required because of a bug in Keras when using tensorflow graph cross threads
